@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIOS - JS</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        1. Par ou Ímpar
+    </h1>
+    <p>
+        Peça um número e diga se ele é par ou ímpar.
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExUm">
+    <button id="exUm" onclick="verifyIsPar()">VERIFICAR!</button>
+    <p id="resultadoExUm"></p>
+
+    <hr> <hr>
+
+    <h1>
+        2. Maior de dois números
+    </h1>
+    <p>
+        Receba dois números e exiba o maior entre eles.
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExDois1">
+    <input type="number" id="numExDois2">
+    <button id="exDois" onclick="verifyBigger()">VERIFICAR!</button>
+    <p id="resultadoExDois"></p>
+
+    <hr> <hr>
+
+    <h1>
+        3. Número positivo, negativo ou zero
+    </h1>
+    <p>
+        Peça um número e diga se ele é positivo, negativo ou zero.
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExTres">
+    <button id="exTres" onclick="verifyIsPositive()">VERIFICAR!</button>
+    <p id="resultadoExTres"></p>
+
+    <hr> <hr>
+    
+    <h1>
+        4. Pode tirar carteira de motorista?
+    </h1>
+    <p>
+        Solicite a idade do usuário. Diga se ele pode ou não tirar a carteira de motorista (idade mínima: 18 anos).
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExQuatro">
+    <button id="exQuatro" onclick="verifyIsDeMaior()">VERIFICAR!</button>
+    <p id="resultadoExQuatro"></p>
+
+    <hr> <hr>
+    
+    <h1>
+        5. Maior de três números
+    </h1>
+    <p>
+        Receba três números e mostre qual é o maior deles.
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExCinco1">
+    <input type="number" id="numExCinco2">
+    <input type="number" id="numExCinco3">
+    <button id="exCinco" onclick="verifyIsWhosBigger()">VERIFICAR!</button>
+    <p id="resultadoExCinco"></p>
+
+    <hr> <hr>
+    
+    <h1>
+        6. Nota para conceito
+    </h1>
+    <p>
+        Receba uma nota (0 a 10) e classifique: <br>
+        A (nota ≥ 9) <br>
+        B (nota ≥ 7) <br>
+        C (nota ≥ 5) <br>
+        D (nota < 5) <br>
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExSeis">
+    
+    <button id="exSeis" onclick="verifyNota()">VERIFICAR!</button>
+    <p id="resultadoExSeis"></p>
+
+    <hr> <hr>
+    
+    <h1>
+        7. Múltiplo de 3 e 5
+    </h1>
+    <p>
+       Peça um número e diga se ele é múltiplo de: <br>
+        3 <br>
+        5 <br>
+        Ambos <br>
+        Nenhum <br>
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExSete">
+    
+    <button id="exSete" onclick="verifyIsMult()">VERIFICAR!</button>
+    <p id="resultadoExSete"></p>
+
+    <hr> <hr>
+    
+    <h1>
+        8. Validação de senha
+    </h1>
+    <p>
+        Peça uma senha ao usuário. Se for igual a "1234", exiba "Acesso permitido", senão "Acesso negado".
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExOito">
+    
+    <button id="exOito" onclick="checkPass()">VERIFICAR!</button>
+    <p id="resultadoExOito"></p>
+
+    <hr> <hr>
+    
+    <h1>
+        9. Calculadora simples
+    </h1>
+    <p>
+        Peça dois números e uma operação (+, -, *, /) e mostre o resultado.
+    </p>
+
+    <hr>
+
+    <input type="number" id="numExNove1">
+    <input type="text" id="opExNove" maxlength="1" style="width: 10px;">
+    <input type="number" id="numExNove2">
+    
+    <button id="exNove" onclick="calculator()">CALCULAR!</button>
+    <p id="resultadoExNove"></p>
+
+    <hr> <hr>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
