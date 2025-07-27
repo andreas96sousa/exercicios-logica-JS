@@ -1,3 +1,24 @@
+let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const totalSlides = carousel.children.length;
+
+  function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+
+
 function verifyIsPar(){
     let numero = Number(numExUm.value)
 

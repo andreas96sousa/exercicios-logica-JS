@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXERCICIOS - JS</title>
-    <style>
-        *{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
 <body>
-    <h1>
+
+    <a href="pdf/validar contracheque (55).pdf" download>Download PDF</a>
+
+
+    <!-- <h1>
         1. Par ou Ímpar
     </h1>
     <p>
@@ -24,9 +26,9 @@
     <button id="exUm" onclick="verifyIsPar()">VERIFICAR!</button>
     <p id="resultadoExUm"></p>
 
-    <hr> <hr>
+    <hr> <hr> -->
 
-    <h1>
+    <!-- <h1>
         2. Maior de dois números
     </h1>
     <p>
@@ -40,9 +42,9 @@
     <button id="exDois" onclick="verifyBigger()">VERIFICAR!</button>
     <p id="resultadoExDois"></p>
 
-    <hr> <hr>
+    <hr> <hr> -->
 
-    <h1>
+    <!-- <h1>
         3. Número positivo, negativo ou zero
     </h1>
     <p>
@@ -53,9 +55,9 @@
 
     <input type="number" id="numExTres">
     <button id="exTres" onclick="verifyIsPositive()">VERIFICAR!</button>
-    <p id="resultadoExTres"></p>
+    <p id="resultadoExTres"></p> -->
 
-    <hr> <hr>
+    <!-- <hr> <hr>
     
     <h1>
         4. Pode tirar carteira de motorista?
@@ -70,9 +72,9 @@
     <button id="exQuatro" onclick="verifyIsDeMaior()">VERIFICAR!</button>
     <p id="resultadoExQuatro"></p>
 
-    <hr> <hr>
+    <hr> <hr> -->
     
-    <h1>
+    <!-- <h1>
         5. Maior de três números
     </h1>
     <p>
@@ -127,9 +129,9 @@
     <button id="exSete" onclick="verifyIsMult()">VERIFICAR!</button>
     <p id="resultadoExSete"></p>
 
-    <hr> <hr>
+    <hr> <hr> -->
     
-    <h1>
+    <!-- <h1>
         8. Validação de senha
     </h1>
     <p>
@@ -233,9 +235,9 @@
     <button id="exTreze" onclick="checkVote()">VERIFICAR!</button>
     <p id="resultadoExTreze"></p>
 
-    <hr> <hr>
+    <hr> <hr> -->
     
-    <h1>
+    <!-- <h1>
         14. Número entre 10 e 100
     </h1>
     <p>
@@ -356,17 +358,315 @@
     <button id="exVinte" onclick="checkIsSamePass()">VERIFICAR!</button>
     <p id="resultadoExVinte"></p>
 
-    <hr> <hr>
+    <hr> <hr> -->
+
+
+    <div class="relative w-full max-w-xl mx-auto overflow-hidden bg-white/60 border rounded-lg ">
+    <div id="carousel" class="flex transition-transform duration-500 ease-out w-full ">
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                1. Par ou Ímpar
+            </h1>
+            <p class="italic text-[blueviolet]">
+                Peça um número e diga se ele é par ou ímpar.
+            </p>
+
+            <input type="number" id="numExUm" placeholder="Digite um número" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exUm" class="border text-center rounded-lg p-2 w-58 text-white bg-black" onclick="verifyIsPar()">VERIFICAR!</button>
+            <p id="resultadoExUm" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+    <h1 class="text-3xl text-[blueviolet]">
+        2. Maior de dois números
+    </h1>
+    <p class="italic text-[blueviolet]">
+        Receba dois números e exiba o maior entre eles.
+    </p>
+
+    <input type="number" id="numExDois1" placeholder="Digite o primeiro número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <input type="number" id="numExDois2" placeholder="Digite o segundo número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <button id="exDois" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="verifyBigger()">VERIFICAR!</button>
+    <p id="resultadoExDois" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+    <h1 class="text-3xl text-[blueviolet]">
+        3. Número positivo, negativo ou zero
+    </h1>
+    <p class="italic text-[blueviolet]">
+        Peça um número e diga se ele é positivo, negativo ou zero.
+    </p>
+
+    <input type="number" id="numExTres" placeholder="Digite um número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <button id="exTres" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="verifyIsPositive()">VERIFICAR!</button>
+    <p id="resultadoExTres" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+    <h1 class="text-3xl text-[blueviolet]">
+        4. Pode tirar carteira de motorista?
+    </h1>
+    <p class="italic text-[blueviolet] text-center">
+        Solicite a idade do usuário. Diga se ele pode ou não tirar a carteira de motorista (idade mínima: 18 anos).
+    </p>
+
+    <input type="number" id="numExQuatro" placeholder="Digite sua idade" class="border text-center rounded-lg p-2 bg-gray-200">
+    <button id="exQuatro" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="verifyIsDeMaior()">VERIFICAR!</button>
+    <p id="resultadoExQuatro" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+    <h1 class="text-3xl text-[blueviolet]">
+        5. Maior de três números
+    </h1>
+    <p class="italic text-[blueviolet] text-center">
+        Receba três números e mostre qual é o maior deles.
+    </p>
+
+    <input type="number" id="numExCinco1" placeholder="Digite o 1º número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <input type="number" id="numExCinco2" placeholder="Digite o 2º número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <input type="number" id="numExCinco3" placeholder="Digite o 3º número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <button id="exCinco" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="verifyIsWhosBigger()">VERIFICAR!</button>
+    <p id="resultadoExCinco" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                6. Nota para conceito
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Receba uma nota (0 a 10) e classifique: <br>
+                A (nota ≥ 9) <br>
+                B (nota ≥ 7) <br>
+                C (nota ≥ 5) <br>
+                D (nota &lt; 5)
+            </p>
+
+            <input type="number" id="numExSeis" placeholder="Digite sua nota" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exSeis" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="verifyNota()">VERIFICAR!</button>
+            <p id="resultadoExSeis" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                7. Múltiplo de 3 e 5
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça um número e diga se ele é múltiplo de: <br>
+                3 <br>
+                5 <br>
+                Ambos <br>
+                Nenhum
+            </p>
+
+            <input type="number" id="numExSete" placeholder="Digite um número" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exSete" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="verifyIsMult()">VERIFICAR!</button>
+            <p id="resultadoExSete" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+    <h1 class="text-3xl text-[blueviolet]">
+        8. Validação de senha
+    </h1>
+    <p class="italic text-[blueviolet] text-center">
+        Peça uma senha ao usuário. Se for igual a "1234", exiba "Acesso permitido", senão "Acesso negado".
+    </p>
+
+    <input type="number" id="numExOito" placeholder="Digite a senha" class="border text-center rounded-lg p-2 bg-gray-200">
+    <button id="exOito" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkPass()">VERIFICAR!</button>
+    <p id="resultadoExOito" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                9. Calculadora simples
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça dois números e uma operação (+, -, *, /) e mostre o resultado.
+            </p>
+
+            <input type="number" id="numExNove1" placeholder="1º número" class="border text-center rounded-lg p-2 bg-gray-200">
+            <input type="text" id="opExNove" placeholder="Operação" maxlength="1" class="border text-center rounded-lg p-2 w-[50px] bg-gray-200">
+            <input type="number" id="numExNove2" placeholder="2º número" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exNove" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="calculator()">CALCULAR!</button>
+            <p id="resultadoExNove" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                10. Ano bissexto
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça um ano e diga se ele é bissexto.
+            </p>
+
+            <input type="number" id="numExDez" placeholder="Digite o ano" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exDez" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkIfIsBi()">VERIFICAR!</button>
+            <p id="resultadoExDez" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+
+            <p id="loremExplica" onclick="lorem()" class="cursor-pointer text-[blueviolet] underline">
+                <b>&gt;&gt;&gt; EXPLICAÇÃO &lt;&lt;&lt;</b>
+            </p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                11. Nomes iguais
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça dois nomes. Informe se são iguais ou diferentes.
+            </p>
+
+            <input type="text" id="nomeExOnze1" placeholder="1º Nome" class="border text-center rounded-lg p-2 bg-gray-200">
+            <input type="text" id="nomeExOnze2" placeholder="2º Nome" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exOnze" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkIfIsSame()">VERIFICAR!</button>
+            <p id="resultadoExOnze" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                12. Classificação de temperatura
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Receba uma temperatura e classifique: <br>
+                Abaixo de 15: Frio <br>
+                Entre 15 e 25: Agradável <br>
+                Acima de 25: Quente
+            </p>
+
+            <input type="number" id="numExDoze" placeholder="Digite a temperatura" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exDoze" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkTemp()">VERIFICAR!</button>
+            <p id="resultadoExDoze" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                13. Pode votar?
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça a idade do usuário. Diga se ele pode votar (16 anos ou mais).
+            </p>
+
+            <input type="number" id="numExTreze" placeholder="Digite sua idade" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exTreze" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkVote()">VERIFICAR!</button>
+            <p id="resultadoExTreze" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+    <h1 class="text-3xl text-[blueviolet]">
+        14. Número entre 10 e 100
+    </h1>
+    <p class="italic text-[blueviolet] text-center">
+        Verifique se um número está entre 10 e 100 (inclusive).
+    </p>
+
+    <input type="number" id="numExQuatorze" placeholder="Digite um número" class="border text-center rounded-lg p-2 bg-gray-200">
+    <button id="exQuatorze" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkNum()">VERIFICAR!</button>
+    <p id="resultadoExQuatorze" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                15. Número par e maior que 50
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Verifique se um número é par e maior que 50 ao mesmo tempo.
+            </p>
+
+            <input type="number" id="numExQuinze" placeholder="Digite um número" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exQuinze" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkParFifth()">VERIFICAR!</button>
+            <p id="resultadoExQuinze" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                16. Desconto na compra
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça o valor de uma compra e aplique descontos: <br>
+                Acima de R$ 100: 10% <br>
+                Entre R$ 50 e R$ 100: 5% <br>
+                Abaixo de R$ 50: Sem desconto
+            </p>
+
+            <input type="number" id="numExDezesseis" placeholder="Valor da compra" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exDezesseis" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="discounts()">VERIFICAR!</button>
+            <p id="resultadoExDezesseis" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                17. Aprovado ou reprovado
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça duas notas. Calcule a média e diga se o aluno está: <br>
+                Aprovado (média ≥ 7) <br>
+                Reprovado (média &lt; 7)
+            </p>
+
+            <input type="number" id="numExDezessete1" placeholder="1ª Nota" class="border text-center rounded-lg p-2 bg-gray-200">
+            <input type="number" id="numExDezessete2" placeholder="2ª Nota" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exDezessete" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="media()">VERIFICAR!</button>
+            <p id="resultadoExDezessete" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                18. Confirmação de presença
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça ao usuário para digitar "sim" ou "não" para confirmar presença. Mostre a resposta apropriada.
+            </p>
+
+            <input type="text" id="respostaExDezoito" placeholder="Digite sim ou não" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exDezoito" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="resposta()">VERIFICAR!</button>
+            <p id="resultadoExDezoito" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                19. Classificação do IMC
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça o peso e a altura, calcule o IMC e classifique: <br>
+                Abaixo de 18.5: Abaixo do peso <br>
+                Entre 18.5 e 24.9: Peso normal <br>
+                25 a 29.9: Sobrepeso <br>
+                Acima de 30: Obesidade
+            </p>
+
+            <input type="number" id="numExDezenove1" placeholder="Altura (m)" class="border text-center rounded-lg p-2 bg-gray-200">
+            <input type="number" id="numExDezenove2" placeholder="Peso (kg)" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exDezenove" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkIMC()">VERIFICAR!</button>
+            <p id="resultadoExDezenove" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
+
+        <div class="min-w-full flex flex-col justify-center items-center p-10 gap-5">
+            <h1 class="text-3xl text-[blueviolet]">
+                20. Senhas iguais
+            </h1>
+            <p class="italic text-[blueviolet] text-center">
+                Peça duas senhas. Informe se são iguais ou diferentes.
+            </p>
+
+            <input type="password" id="numExVinte1" placeholder="Senha 1" class="border text-center rounded-lg p-2 bg-gray-200">
+            <input type="password" id="numExVinte2" placeholder="Senha 2" class="border text-center rounded-lg p-2 bg-gray-200">
+            <button id="exVinte" class="border text-center rounded-lg p-2 w-[120px] text-white bg-black" onclick="checkIsSamePass()">VERIFICAR!</button>
+            <p id="resultadoExVinte" class="p-3 pl-5 pr-5 border-[blueviolet] border-2 rounded-full"></p>
+        </div>
 
 
 
 
+    
+  </div>
+  
 
-
-
-
-
-
+  <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black text-white p-2 rounded-full">◀</button>
+  <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black text-white p-2 rounded-full">▶</button>
+</div>
 
 <script src="script.js"></script>
 </body>
